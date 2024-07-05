@@ -1,0 +1,46 @@
+{
+    "blog": [
+        {
+            "id": 1,
+            "title": "SAPA MÙA XUÂN NẮNG RÁO (PHẦN 01)",
+            "bulletpoints": [
+                {
+                    "id": 1,
+                    "name": "1. Sapa thay đổi"
+                },
+                {
+                    "id": 2,
+                    "name": "2. Tả Van - Thung Lũng Mường Hoa"
+                }
+            ],
+            "content": [
+                    {
+                        "id": 1,
+                        "name": " Nhân một ngày đẹp đẽ mùng 4 tết mình cùng 2 người bạn đã tới thị trấn Sapa vãn cảnh chơi xuân. Chuyến đi này thú vị lắm vì bình thường mình chỉ loanh quanh ở thị trấn còn nay đã biết thuê xe máy khám phá các ngõ ngách làng bản rồi. Vậy mới là du lịch chứ nhỉ, xin chia sẻ với các bạn một số địa điểm hay ho khi bạn tới Sapa nhé. Sapa cách thành phố Lào Cai 30km. Để đến được Lào Cai nếu bắt đầu từ bến xe Mỹ Đình – Hà Nội thì các bạn hãy đi xe giường nằm. Mất 4-5 tiếng là đến bến xe Lào Cai, giá vé dao động từ 230k – 250k. Nên đi ban đêm vì ngủ dậy một cái là tới Lào Cai rồi.  Tại sao không đi thẳng xe giường nằm lên SaPa cho rẻ, lý do giải thích bên dưới. Mình đi xe máy từ Lào Cai đến Sapa vì muốn chủ động ngắm cảnh ruộng bậc thang, chụp ảnh đồi núi trên đường đi nên nếu bạn đi ô tô sẽ bỏ lỡ vụ này. Phí thuê xe máy khoảng 150k/ngày và cần đặt cọc CMT ở lại. Quang cảnh núi non trùng điệp khi đi qua đèo... Thật sự hoành tráng, nếu đi vào mùa lúa tháng 9, 10 thì còn tuyệt vời hơn vì màu xanh của mạ hay màu vàng lúa chín như những bức tranh hoành tráng nhất mà bạn từng thấy. Còn hiện tại là tông nâu trầm, xám khói cũng cổ điển hoài niệm không kém mấy cảnh phim của nước ngoài đâu."
+                    }
+            ] ,
+            "author": "Đức Thịnh",
+            "createdat": "2024-01-01",
+            "category": "Travel",
+            "image" : [
+                    {
+                        "id": 1,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520758394964-MD83RYD701OO9SNZ8A08/sapa+mua+xuan+nang+rao+.jpg?format=1500w"
+                    },
+                    {
+                        "id": 2,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520772127101-5HMB8OGMCFONQC1W71AG/duong+01.jpg?format=1500w"
+                    },
+                    {
+                        "id": 3,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520739071793-KSUA6Q8PPEYHBNG5STPH/IMG_1658.jpg?format=1500w"
+                    },
+                    {
+                        "id": 4,
+                        "name": "product1_3.png"
+                    }
+            ]
+
+        }
+    ]
+}
