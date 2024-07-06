@@ -1,17 +1,30 @@
 import { Link } from "react-router-dom";
 import "./singlePost.css";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { useParams } from 'react-router-dom';
 
 export default function SinglePost() {
+  const [blog, setBlog] = useState([]);
+  const { id } = useParams();
+  useEffect(() => {
+    axios.get(`http://localhost:9999/blog/${id}`)
+      .then(res => setBlog(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
   return (
     <div className="singlePost">
       <div className="singlePostWrapper">
-        <img
-          className="singlePostImg"
-          src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-          alt=""
-        />
+      {blog.image && blog.image.length > 0 && (
+          <img
+            className="singlePostImg"
+            src={blog.image[0].name}
+            alt={`Sapa Image 1`}
+          />
+        )}
         <h1 className="singlePostTitle">
-          Lorem ipsum dolor
+          {blog.title}
           <div className="singlePostEdit">
             <i className="singlePostIcon far fa-edit"></i>
             <i className="singlePostIcon far fa-trash-alt"></i>
@@ -19,45 +32,65 @@ export default function SinglePost() {
         </h1>
         <div className="singlePostInfo">
           <span>
-            Author:
-            <b className="singlePostAuthor">
+            Author: {blog.author}
+            {/* <b className="singlePostAuthor">
               <Link className="link" to="/posts?username=Safak">
                 Safak
               </Link>
-            </b>
+            </b> */}
           </span>
-          <span>1 day ago</span>
+          <span>{blog.createdat}</span>
         </div>
-        <p className="singlePostDesc">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error
-          quibusdam ipsa quis quidem doloribus eos, dolore ea iusto impedit!
-          Voluptatum necessitatibus eum beatae, adipisci voluptas a odit modi
-          eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-          error quibusdam ipsa quis quidem doloribus eos, dolore ea iusto
-          impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas a
-          odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos!
+        
+        {blog.bulletpoints && blog.bulletpoints.length>0 && (
+            <p className="singlePostDesc">
+            <h4>{blog.bulletpoints[0].name}</h4> <br />
+            </p>
+          )}
+          {blog.content && blog.content.length>0 && (
+            <p className="singlePostDesc">
+            <p>{blog.content[0].name}</p> <br />
+            </p>
+          )}
+         {blog.bulletpoints && blog.bulletpoints.length>0 && (
+            <p className="singlePostDesc">
+            <h4>{blog.bulletpoints[1].name}</h4> <br />
+            </p>
+          )}
+          {blog.content && blog.content.length>0 && (
+            <p className="singlePostDesc">
+            <p>{blog.content[1].name}</p> <br />
+            </p>
+          )}
           <br />
-          <br />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste error
-          quibusdam ipsa quis quidem doloribus eos, dolore ea iusto impedit!
-          Voluptatum necessitatibus eum beatae, adipisci voluptas a odit modi
-          eos! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste
-          error quibusdam ipsa quis quidem doloribus eos, dolore ea iusto
-          impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas a
-          odit modi eos! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Iste error quibusdam ipsa quis quidem doloribus eos, dolore ea
-          iusto impedit! Voluptatum necessitatibus eum beatae, adipisci voluptas
-          a odit modi eos! Lorem, ipsum dolor sit amet consectetur.
-        </p>
+          {blog.image && blog.image.length > 0 && (
+            <div>
+          <img
+          style={{width: "80%", height: "auto", margin: "auto", display: "block"}}
+            src={blog.image[1].name}
+          />
+          <p style={{textAlign: "center"}}>{blog.image[1].titleimg}</p>
+          </div>
+        )}
+        {blog.image && blog.image.length > 0 && (
+            <div>
+          <img
+          style={{width: "80%", height: "auto", margin: "auto", display: "block"}}
+            src={blog.image[2].name}
+          />
+          <p style={{textAlign: "center"}}>{blog.image[2].titleimg}</p>
+          </div>
+        )}
+        {blog.image && blog.image.length > 0 && (
+            <div>
+          <img
+          style={{width: "80%", height: "auto", margin: "auto", display: "block"}}
+            src={blog.image[3].name}
+          />
+          <p style={{textAlign: "center"}}>{blog.image[3].titleimg}</p>
+          </div>
+        )}
+        
       </div>
     </div>
   );

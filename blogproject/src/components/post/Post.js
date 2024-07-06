@@ -1,41 +1,67 @@
-import { Link } from "react-router-dom";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import "./post.css";
 
-export default function Post({img}) {
+export default function Post({ search }) {
+  const [blog, setBlog] = useState([]);
+
+  useEffect(() => {
+    axios.get(`http://localhost:9999/blog`)
+      .then(res => setBlog(res.data))
+      .catch(err => console.log(err));
+  }, []);
+
+  if (!blog) {
+    return <div>Loading...</div>;
+  }
+
+  const filteredBlog = blog.filter(b => {
+    const titleMatch = b.title?.toLowerCase().includes(search.toLowerCase());
+    const categoryMatch = b.category?.toLowerCase().includes(search.toLowerCase());
+    const authorMatch = b.author?.toLowerCase().includes(search.toLowerCase());
+    const contentMatch = b.content?.some(content => content.name?.toLowerCase().includes(search.toLowerCase()));
+    
+    return titleMatch || categoryMatch || authorMatch || contentMatch;
+  });
+
   return (
-    <div className="post">
-      <img
-        className="postImg"
-        src={img}
-        alt=""
-      />
-      <div className="postInfo">
-        <div className="postCats">
-          <span className="postCat">
-            <Link className="link" to="/posts?cat=Music">
-              Music
-            </Link>
-          </span>
-          <span className="postCat">
-            <Link className="link" to="/posts?cat=Music">
-              Life
-            </Link>
-          </span>
+    <div className="posts">
+      {filteredBlog.map((b) => (
+        <div className="post" key={b.id}>
+          {b.image && b.image[0] && (
+            <img
+              className="postImg"
+              src={b.image[0].name}
+              alt={b.title}
+            />
+          )}
+          <div className="postInfo">
+            <div className="postCats">
+              <span className="postCat">
+                <Link className="link" to={`/posts?cat=${b.category}`}>
+                  {b.category}
+                </Link>
+              </span>
+            </div>
+            <span className="postTitle">
+              <Link to={`/post/${b.id}`} className="link">
+                {b.title}
+              </Link>
+            </span>
+            <hr />
+            <div style={{ display: "flex", justifyContent: "space-between" }}>
+              <span className="postDate">{new Date(b.createdat).toLocaleDateString()}</span>
+              <span className="postDate"> {b.author}</span>
+            </div>
+          </div>
+          <div className="postDesc">
+            {b.content?.map((content) => (
+              <p key={content.id}>{content.name}</p>
+            ))}
+          </div>
         </div>
-        <span className="postTitle">
-          <Link to="/post/abc" className="link">
-            Lorem ipsum dolor sit amet
-          </Link>
-        </span>
-        <hr />
-        <span className="postDate">1 hour ago</span>
-      </div>
-      <p className="postDesc">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
-        officia architecto deserunt deleniti? Labore ipsum aspernatur magnam
-        fugiat, reprehenderit praesentium blanditiis quos cupiditate ratione
-        atque, exercitationem quibusdam, reiciendis odio laboriosam?
-      </p>
+      ))}
     </div>
   );
 }

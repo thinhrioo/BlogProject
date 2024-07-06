@@ -12,10 +12,10 @@ function App() {
   const currentUser = true;
   return (
     <BrowserRouter>
-    <Topbar />
+    
         <Routes>
           <Route path='/' element={<Homepage/>}></Route>
-          <Route path='/register' element={currentUser ? <Homepage /> : <Register />}></Route>
+          {/* <Route path='/register' element={currentUser ? <Homepage /> : <Register />}></Route> */}
           <Route path="/login" element={currentUser ? <Homepage /> : <Login />}></Route>
           <Route path="/post/:id" element={<Single />}></Route>
           <Route path="/write" element={currentUser ? <Write /> : <Login />}></Route>

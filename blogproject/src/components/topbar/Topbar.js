@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./topbar.css";
 
-export default function Topbar() {
+export default function Topbar({ handleInputChange}) {
   const user = true;
   return (
     <div className="top">
@@ -28,6 +28,14 @@ export default function Topbar() {
           {user && <li className="topListItem">LOGOUT</li>}
         </ul>
       </div>
+      <div className='nav-container'>
+        <input 
+        type='text' 
+        className='search-input' 
+        placeholder='Enter your search '
+        onChange={handleInputChange}
+        />
+    </div>
       <div className="topRight">
         {user ? (
           <Link className="link" to="/settings">

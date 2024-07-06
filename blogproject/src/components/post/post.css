@@ -5,6 +5,14 @@
   flex-direction: column;
 }
 
+.posts{
+  flex: 9;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+
 .postImg {
   width: 385px;
   height: 280px;
@@ -35,6 +43,7 @@
   font-weight: 900;
   margin-top: 15px;
   cursor: pointer;
+  
 }
 
 .postDate {

@@ -5,18 +5,30 @@
             "title": "SAPA MÙA XUÂN NẮNG RÁO (PHẦN 01)",
             "bulletpoints": [
                 {
-                    "id": 1,
-                    "name": "1. Sapa thay đổi"
+                    "id":1,
+                    "name":"1. Sapa thay đổi"
                 },
                 {
-                    "id": 2,
-                    "name": "2. Tả Van - Thung Lũng Mường Hoa"
+                    "id":2,
+                    "name":"2. Tả Van - Thung Lũng Mường Hoa"
                 }
             ],
             "content": [
                     {
                         "id": 1,
                         "name": " Nhân một ngày đẹp đẽ mùng 4 tết mình cùng 2 người bạn đã tới thị trấn Sapa vãn cảnh chơi xuân. Chuyến đi này thú vị lắm vì bình thường mình chỉ loanh quanh ở thị trấn còn nay đã biết thuê xe máy khám phá các ngõ ngách làng bản rồi. Vậy mới là du lịch chứ nhỉ, xin chia sẻ với các bạn một số địa điểm hay ho khi bạn tới Sapa nhé. Sapa cách thành phố Lào Cai 30km. Để đến được Lào Cai nếu bắt đầu từ bến xe Mỹ Đình – Hà Nội thì các bạn hãy đi xe giường nằm. Mất 4-5 tiếng là đến bến xe Lào Cai, giá vé dao động từ 230k – 250k. Nên đi ban đêm vì ngủ dậy một cái là tới Lào Cai rồi.  Tại sao không đi thẳng xe giường nằm lên SaPa cho rẻ, lý do giải thích bên dưới. Mình đi xe máy từ Lào Cai đến Sapa vì muốn chủ động ngắm cảnh ruộng bậc thang, chụp ảnh đồi núi trên đường đi nên nếu bạn đi ô tô sẽ bỏ lỡ vụ này. Phí thuê xe máy khoảng 150k/ngày và cần đặt cọc CMT ở lại. Quang cảnh núi non trùng điệp khi đi qua đèo... Thật sự hoành tráng, nếu đi vào mùa lúa tháng 9, 10 thì còn tuyệt vời hơn vì màu xanh của mạ hay màu vàng lúa chín như những bức tranh hoành tráng nhất mà bạn từng thấy. Còn hiện tại là tông nâu trầm, xám khói cũng cổ điển hoài niệm không kém mấy cảnh phim của nước ngoài đâu."
+                    },
+                    {
+                        "id":2,
+                        "name": "Sapa cách thành phố Lào Cai 30km. Để đến được Lào Cai nếu bắt đầu từ bến xe Mỹ Đình – Hà Nội thì các bạn hãy đi xe giường nằm. Mất 4-5 tiếng là đến bến xe Lào Cai, giá vé dao động từ 230k – 250k. Nên đi ban đêm vì ngủ dậy một cái là tới Lào Cai rồi.  Tại sao không đi thẳng xe giường nằm lên SaPa cho rẻ, lý do giải thích bên dưới. Mình đi xe máy từ Lào Cai đến Sapa vì muốn chủ động ngắm cảnh ruộng bậc thang, chụp ảnh đồi núi trên đường đi nên nếu bạn đi ô tô sẽ bỏ lỡ vụ này. Phí thuê xe máy khoảng 150k/ngày và cần đặt cọc CMT ở lại. Quang cảnh núi non trùng điệp khi đi qua đèo... Thật sự hoành tráng, nếu đi vào mùa lúa tháng 9, 10 thì còn tuyệt vời hơn vì màu xanh của mạ hay màu vàng lúa chín như những bức tranh hoành tráng nhất mà bạn từng thấy. Còn hiện tại là tông nâu trầm, xám khói cũng cổ điển hoài niệm không kém mấy cảnh phim của nước ngoài đâu."
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
                     }
             ] ,
             "author": "Đức Thịnh",
@@ -25,22 +37,184 @@
             "image" : [
                     {
                         "id": 1,
-                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520758394964-MD83RYD701OO9SNZ8A08/sapa+mua+xuan+nang+rao+.jpg?format=1500w"
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520758394964-MD83RYD701OO9SNZ8A08/sapa+mua+xuan+nang+rao+.jpg?format=1500w",
+                        "titleimg": ""
                     },
                     {
                         "id": 2,
-                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520772127101-5HMB8OGMCFONQC1W71AG/duong+01.jpg?format=1500w"
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520772127101-5HMB8OGMCFONQC1W71AG/duong+01.jpg?format=1500w",
+                        "titleimg": "Đi khoảng 15km sẽ tới hồ thuỷ điện, các bạn có thể dừng tại đây ngắm cảnh."
                     },
                     {
                         "id": 3,
-                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520739071793-KSUA6Q8PPEYHBNG5STPH/IMG_1658.jpg?format=1500w"
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520739071793-KSUA6Q8PPEYHBNG5STPH/IMG_1658.jpg?format=1500w",
+                        "titleimg": "Tiếp tục đi tới cua 3 tầng, đây là khúc cua ngoạn mục nhất, khá nguy hiểm nên giảm tốc độ nhé."
                     },
                     {
                         "id": 4,
-                        "name": "product1_3.png"
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520772455248-U1ZUTWP5XF859S2XRRCP/duong+14.jpg?format=1500w"
                     }
             ]
-
+        },
+        {
+            "id": 2,
+            "title": "RA MẮT SÁCH COOKBOOK EAT CLEAN - 14 NGÀY THANH LỌC CƠ THỂ VÀ GIẢM CÂN",
+            "bulletpoints": [
+                {
+                    "id":1,
+                    "name":""
+                },
+                {
+                    "id":2,
+                    "name":""
+                }
+            ],
+            "content": [
+                    {
+                        "id": 1,
+                        "name": "Bạn thân mến, vậy là cuốn sách tâm huyết của chúng mình đã đến ngày ra mắt. Sau bao ngày miệt mài với thực phẩm và những shoot hình để ngày hôm nay thứ 7 ngày 2/3/2019 cuốn sách này chính thức lên kệ. Đây là tình yêu của chúng mình dành cho những tín đồ ẩm thực theo đuổi lối sống CLEAN. Mình mong rằng các bạn sẽ có một sức khoẻ thật tốt để tận hưởng những gì cuộc sống đem lại. Nếu đang tìm kiếm một món quà ý nghĩa cho người thân, bạn bè thì đây cũng là một gợi ý tuyệt vời cho bạn đấy. ;) Hãy dành cho nhau những lời chúc sức khoẻ như chính cuốn sách này nhé."
+                    },
+                    {
+                        "id":2,
+                        "name":""
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+            ] ,
+            "author": "Tuyết Mai",
+            "createdat": "2024-04-01",
+            "category": "Styling",
+            "image" : [
+                    {
+                        "id": 1,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1553253895489-JAA1LTZQ65XYS2EF9R94/thi%E1%BB%87p+m%E1%BB%9Di-02.jpg?format=1500w"
+                    },
+                    {
+                        "id": 2,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1553254307048-ODD2MNI01HUBI3ZJWDNW/2EB14A2B-A3D3-4BF6-9F0F-397736A3CB7A.jpg?format=1000w"
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+            ]
+        },
+        {
+            "id": 3,
+            "title": "CÀ TÍM NƯỚNG SỐT TERIYAKI",
+            "bulletpoints": [
+                {
+                    "id":1,
+                    "name":""
+                },
+                {
+                    "id":2,
+                    "name":""
+                }
+            ],
+            "content": [
+                    {
+                        "id": 1,
+                        "name": "Món cà tím này hôm trước mình chưng cầu ý kiến các bạn thì chỉ có 33% số người vote cho món chay này nhưng mà các bạn ơi, ăn chay chưa bao giờ ngon đến thế hiu hiu. Hãy thử món cà tím với nước sốt teriyaki này nhé. Phần nước sốt sẽ nâng tầm cho món ăn cực kì nên hãy xem hết clip để biết mình đã bổ sung kỹ thuật gì của nhà hàng Nhật mà khiến món này ngon bất bại. "
+                    },
+                    {
+                        "id":2,
+                        "name":""
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+            ] ,
+            "author": "Duy Bảo",
+            "createdat": "2024-04-30",
+            "category": "Food",
+            "image" : [
+                    {
+                        "id": 1,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/19f87c95-75ea-4b52-96a8-b0ba56901210/1ca+tim+Thumbnail_Id_1080+X+1350.jpg?format=1500w"
+                    },
+                    {
+                        "id":2,
+                        "name":""
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+                    
+            ]
+        },
+        {
+            "id": 4,
+            "title": "PHẢI ĐỢI BAO LÂU ĐỂ CÓ CĂN BẾP TRONG MƠ?",
+            "bulletpoints": [
+                {
+                    "id":1,
+                    "name":""
+                },
+                {
+                    "id":2,
+                    "name":""
+                }
+            ],
+            "content": [
+                    {
+                        "id": 1,
+                        "name": "Bất kì ai tới nhà mình đều có chung một thắc mắc: Sao đi thuê nhà mà đầu tư ác thế? Chủ nhà lấy lại nhà thì bao nhiêu tiền mất hết! Phí thế có phải nhà mình đâu mà bày vẽ? Vậy nếu những ai trót yêu bếp mà chưa có tiền mua nhà thì chẳng nhẽ cứ nấu nướng tạm bợ hoặc chẳng nấu ăn nữa? Nếu đến quá nửa đời người bạn vẫn chưa mua được nhà thì sao?"
+                    },
+                    {
+                        "id":2,
+                        "name":""
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+            ] ,
+            "author": "Mai Anh",
+            "createdat": "2024-05-2",
+            "category": "Life Style",
+            "image" : [
+                    {
+                        "id": 1,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1583476562927-1ID0YS6CJHKYPBZWID8I/20200207+-+Architecture+-+Meothuyduong%27s+house+-+00066.jpg?format=1500w"
+                    },
+                    {
+                         "id": 2,
+                        "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1583477209185-DQ4J1KNILUVJJ52BGTPF/20200207+-+Architecture+-+Meothuyduong%27s+house+-+00106.jpg?format=750w"
+                    },
+                    {
+                        "id":3,
+                        "name":""
+                    },
+                    {
+                        "id":4,
+                        "name":""
+                    }
+            ]
         }
     ]
 }

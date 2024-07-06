@@ -5,17 +5,6 @@ export default function Sidebar() {
   return (
     <div className="sidebar">
       <div className="sidebarItem">
-        <span className="sidebarTitle">ABOUT ME</span>
-        <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
-          alt=""
-        />
-        <p>
-          Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
-          amet ex esse.Sunt eu ut nostrud id quis proident.
-        </p>
-      </div>
-      <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
           <li className="sidebarListItem">
@@ -59,6 +48,19 @@ export default function Sidebar() {
           <i className="sidebarIcon fab fa-twitter-square"></i>
         </div>
       </div>
+      <div className="sidebarItem">
+        <span className="sidebarTitle">ABOUT ME</span>
+        <img style={{borderRadius: "10%"}}
+          src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-1/440850162_2703492486484099_5025557501151953762_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEMQTTWPGqajIlOcTpBFssx07UK-ZZkubzTtQr5lmS5vD782QfLlwob8m29qLnIQ1-ubrAe-PgyTp_NorSukZPw&_nc_ohc=e5QcWVlbLDMQ7kNvgGxPW0H&_nc_ht=scontent.fhan15-1.fna&oh=00_AYDspeuU7_1MVhcoPd_yCd65WB9Cv1x2WS2wqmILGnu_oQ&oe=668DB6FF"
+          alt=""
+        />
+        <p style={{fontFamily:"courier"}}>
+        Vậy lý do thực sự tôi tạo ra blog này là gì? Tôi chỉ đơn giản muốn làm cho mọi thứ xung quanh mình trở nên đẹp đẽ. Và sẽ tuyệt vời hơn nếu tôi có thể chia sẻ những điều đó với tất cả mọi người. 
+Tôi nghĩ thế!<br/>
+  <p>Positive living - Sống tích cực bạn nhé ;)</p>
+        </p>
+      </div>
+      
     </div>
   );
 }
