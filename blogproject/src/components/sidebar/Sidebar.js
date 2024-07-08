@@ -1,43 +1,35 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
+export default function Sidebar({handleCategoryChange}) {
+  const [categories, setCategories] = useState([]);
 
-export default function Sidebar() {
+  useEffect(() => {
+    axios.get(`http://localhost:9999/blog`)
+      .then(res => {
+        const uniqueCategories = [...new Set(res.data.map(b => b.category))];
+        setCategories(uniqueCategories);
+      })
+      .catch(err => console.log(err));
+  }, []);
   return (
     <div className="sidebar">
-      <div className="sidebarItem">
-        <span className="sidebarTitle">CATEGORIES</span>
-        <ul className="sidebarList">
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Life">
-              Life
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Music">
-              Music
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Sport">
-              Sport
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Style">
-              Style
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Tech">
-              Tech
-            </Link>
-          </li>
-          <li className="sidebarListItem">
-            <Link className="link" to="/posts?cat=Cinema">
-              Cinema
-            </Link>
-          </li>
-        </ul>
+      <span className="sidebarTitle">CATEGORIES</span>
+      <div className="">
+        
+        {categories.map((category) => (
+            <div style={{display: "flex", flexDirection: "row", alignItems: "left"}}>
+            <input
+              style={{marginTop: "-20%"}}
+              type="checkbox"
+              value={category}
+              onChange={() => handleCategoryChange(category)}
+           />
+            <p>{category}</p>
+            </div>
+        ))}
+        
       </div>
       <div className="sidebarItem">
         <span className="sidebarTitle">FOLLOW US</span>

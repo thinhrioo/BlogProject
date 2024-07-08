@@ -6,22 +6,40 @@ import "./homepage.css";
 import Post from "../../components/post/Post";
 import { useState } from "react";
 import Topbar from "../../components/topbar/Topbar";
+import { Col, Row } from "react-bootstrap";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Homepage() {
   const location = useLocation();
   console.log(location);
 
   const [search, setSearch] = useState("");
+  const [selectedCategories, setSelectedCategories] = useState([]);
   const handleInputChange = (e) => {
     setSearch(e.target.value);
+  };
+  const handleCategoryChange = (category) => {
+    setSelectedCategories(prevState =>
+      prevState.includes(category)
+        ? prevState.filter(cat => cat !== category)
+        : [...prevState, category]
+    );
   };
   return (
     <>
     <Topbar handleInputChange={handleInputChange}/>
       <Header />
       <div className="home">
-        <Post search={search}/>
-        <Sidebar />
+        <Row>
+          <Col xs={12} md={9}>
+            <Post search={search} selectedCategories={selectedCategories}/>
+          </Col>
+          <Col xs={12} md={3}>
+            <Sidebar handleCategoryChange={handleCategoryChange}/>
+          </Col>
+        </Row>
+        
+        
       </div>
     </>
   );

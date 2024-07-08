@@ -31,7 +31,7 @@ export default function Topbar({ handleInputChange}) {
       <div className='nav-container'>
         <input 
         type='text' 
-        className='search-input' 
+        className='search-input input1' 
         placeholder='Enter your search '
         onChange={handleInputChange}
         />
