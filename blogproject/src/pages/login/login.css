@@ -1,61 +1,52 @@
+/* src/pages/login/login.css */
 .login {
-  height: calc(100vh - 50px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: 100vh;
   background: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("https://images.pexels.com/photos/768473/pexels-photo-768473.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+    url("https://images.pexels.com/photos/317355/pexels-photo-317355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
 }
 
 .loginTitle {
-  font-size: 50px;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .loginForm {
-  margin-top: 20px;
   display: flex;
   flex-direction: column;
-}
-
-.loginForm > label {
-  margin: 10px 0;
+  width: 300px;
 }
 
 .loginInput {
+  margin-bottom: 15px;
   padding: 10px;
-  background-color: white;
-  border: none;
-  border-radius: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
-.loginInput:focus {
-  outline: none;
-}
-
-.loginButton {
-  margin-top: 20px;
-  cursor: pointer;
-  background-color: lightcoral;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 10px;
-  text-align: center;
-}
-
+.loginButton,
 .loginRegisterButton {
-  position: absolute;
-  top: 60px;
-  right: 20px;
-  background-color: teal;
-  cursor: pointer;
   padding: 10px;
   border: none;
+  background-color: #007bff;
   color: white;
-  border-radius: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.loginButton:hover,
+.loginRegisterButton:hover {
+  background-color: #0056b3;
+}
+
+.error {
+  color: red;
+  margin-bottom: 15px;
 }

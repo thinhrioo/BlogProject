@@ -1,3 +1,4 @@
+// src/pages/homepage/Homepage.js
 import { useLocation } from "react-router";
 import Header from "../../components/header/Header";
 import Posts from "../../components/posts/Posts";
@@ -9,15 +10,13 @@ import Topbar from "../../components/topbar/Topbar";
 import { Col, Row } from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Homepage() {
+export default function Homepage( {search} ) {
   const location = useLocation();
   console.log(location);
 
-  const [search, setSearch] = useState("");
+ 
   const [selectedCategories, setSelectedCategories] = useState([]);
-  const handleInputChange = (e) => {
-    setSearch(e.target.value);
-  };
+  
   const handleCategoryChange = (category) => {
     setSelectedCategories(prevState =>
       prevState.includes(category)
@@ -25,9 +24,10 @@ export default function Homepage() {
         : [...prevState, category]
     );
   };
+  
   return (
-    <>
-    <Topbar handleInputChange={handleInputChange}/>
+    <div>
+      
       <Header />
       <div className="home">
         <Row>
@@ -38,9 +38,7 @@ export default function Homepage() {
             <Sidebar handleCategoryChange={handleCategoryChange}/>
           </Col>
         </Row>
-        
-        
       </div>
-    </>
+    </div>
   );
 }
