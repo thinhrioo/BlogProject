@@ -11,21 +11,6 @@
       "username": "user2",
       "password": "password2",
       "email": "user2@example.com"
-    },
-    {
-      "id": "db4d",
-      "username": "user1",
-      "password": "12345"
-    },
-    {
-      "id": "1ecb",
-      "username": "user1",
-      "password": "123456"
-    },
-    {
-      "id": "2d66",
-      "username": "user1",
-      "password": "12345"
     }
   ],
   "blog": [
