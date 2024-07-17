@@ -1,21 +1,27 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "username": "user1",
       "password": "123456",
       "email": "user1@example.com"
     },
     {
-      "id": 2,
+      "id": "2",
       "username": "user2",
       "password": "password2",
       "email": "user2@example.com"
+    },
+    {
+      "id": "abd7",
+      "username": "thinh",
+      "email": "thinh@gmail.com",
+      "password": "123"
     }
   ],
   "blog": [
     {
-      "id": 1,
+      "id": "1",
       "title": "SAPA MÙA XUÂN NẮNG RÁO (PHẦN 01)",
       "bulletpoints": [
         {
@@ -71,7 +77,7 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "RA MẮT SÁCH COOKBOOK EAT CLEAN - 14 NGÀY THANH LỌC CƠ THỂ VÀ GIẢM CÂN",
       "bulletpoints": [
         {
@@ -124,7 +130,7 @@
       ]
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "CÀ TÍM NƯỚNG SỐT TERIYAKI",
       "bulletpoints": [
         {
@@ -177,7 +183,7 @@
       ]
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "PHẢI ĐỢI BAO LÂU ĐỂ CÓ CĂN BẾP TRONG MƠ?",
       "bulletpoints": [
         {
@@ -226,6 +232,43 @@
         {
           "id": 4,
           "name": ""
+        }
+      ]
+    },
+    {
+      "id": 1721201216985,
+      "title": "Demo 1",
+      "bulletpoints": [
+        {
+          "id": 1,
+          "name": "Tieu de 1"
+        },
+        {
+          "id": 2,
+          "name": "Tieu de 2"
+        }
+      ],
+      "content": [
+        {
+          "id": 1,
+          "name": "content 1"
+        },
+        {
+          "id": 2,
+          "name": "content 2"
+        }
+      ],
+      "author": "Thinh",
+      "createdat": "2024-07-17",
+      "category": "Styling",
+      "image": [
+        {
+          "id": 1,
+          "name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s"
+        },
+        {
+          "id": 2,
+          "name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s"
         }
       ]
     }

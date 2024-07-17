@@ -43,7 +43,7 @@ export default function Sidebar({handleCategoryChange}) {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img style={{borderRadius: "10%"}}
-          src="https://scontent.fhan15-1.fna.fbcdn.net/v/t39.30808-1/440850162_2703492486484099_5025557501151953762_n.jpg?stp=dst-jpg_p200x200&_nc_cat=108&ccb=1-7&_nc_sid=0ecb9b&_nc_eui2=AeEMQTTWPGqajIlOcTpBFssx07UK-ZZkubzTtQr5lmS5vD782QfLlwob8m29qLnIQ1-ubrAe-PgyTp_NorSukZPw&_nc_ohc=e5QcWVlbLDMQ7kNvgGxPW0H&_nc_ht=scontent.fhan15-1.fna&oh=00_AYDspeuU7_1MVhcoPd_yCd65WB9Cv1x2WS2wqmILGnu_oQ&oe=668DB6FF"
+          src="https://scontent.fhan2-3.fna.fbcdn.net/v/t39.30808-6/440850162_2703492486484099_5025557501151953762_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEMQTTWPGqajIlOcTpBFssx07UK-ZZkubzTtQr5lmS5vD782QfLlwob8m29qLnIQ1-ubrAe-PgyTp_NorSukZPw&_nc_ohc=BD8mf6Z_yS0Q7kNvgH-KqHF&_nc_ht=scontent.fhan2-3.fna&oh=00_AYCKiN6Yzecvx1f4eNJqt2OKqdC0l_AKCi1PM2hLGJAQnQ&oe=669D487D"
           alt=""
         />
         <p style={{fontFamily:"courier"}}>

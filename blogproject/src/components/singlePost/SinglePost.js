@@ -52,6 +52,15 @@ export default function SinglePost() {
             <p>{blog.content[0].name}</p> <br />
             </p>
           )}
+          {blog.image && blog.image.length > 0 && (
+            <div>
+          <img
+          style={{width: "80%", height: "auto", margin: "auto", display: "block"}}
+            src={blog.image[1].name}
+          />
+          <p style={{textAlign: "center"}}>{blog.image[1].titleimg}</p>
+          </div>
+        )}
          {blog.bulletpoints && blog.bulletpoints.length>0 && (
             <p className="singlePostDesc">
             <h4>{blog.bulletpoints[1].name}</h4> <br />
@@ -63,15 +72,7 @@ export default function SinglePost() {
             </p>
           )}
           <br />
-          {blog.image && blog.image.length > 0 && (
-            <div>
-          <img
-          style={{width: "80%", height: "auto", margin: "auto", display: "block"}}
-            src={blog.image[1].name}
-          />
-          <p style={{textAlign: "center"}}>{blog.image[1].titleimg}</p>
-          </div>
-        )}
+          
         {blog.image && blog.image.length > 0 && (
             <div>
           <img

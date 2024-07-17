@@ -1,72 +1,47 @@
+/* src/pages/write/write.css */
 .write {
-  padding-top: 50px;
-}
-
-.writeImg {
-  margin-left: 150px;
-  width: 70vw;
-  height: 250px;
-  border-radius: 10px;
-  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
 .writeForm {
-  position: relative;
+  width: 70%;
+  margin-top: 20px;
 }
 
 .writeFormGroup {
-  margin-left: 150px;
   display: flex;
-  align-items: center;
-}
-
-.writeIcon {
-  width: 25px;
-  height: 25px;
-  font-size: 20px;
-  border: 1px solid;
-  border-radius: 50%;
-  color: rgb(129, 125, 125);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
 .writeInput {
-  font-size: 30px;
-  border: none;
-  padding: 20px;
-  width: 70vw;
-}
-
-.writeInput::placeholder {
-  color: rgb(189, 185, 185);
-  font-weight: 400;
-}
-
-.writeInput:focus {
-  outline-style: none;
+  padding: 10px;
+  font-size: 18px;
 }
 
 .writeText {
-  width: 70vw;
-  height: 100vh;
-  font-family: inherit;
-  font-size: 20px;
+  height: 200px;
+  resize: none;
 }
 
-.writeSubmit {
-  position: absolute;
-  top: 20px;
-  right: 50px;
+.writeButton {
+  background-color: lightcoral;
   color: white;
-  background-color: teal;
   padding: 10px;
   border: none;
-  border-radius: 10px;
-  font-size: 16px;
   cursor: pointer;
-  display: flex;
-  align-items: center;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.writeButton:hover {
+  background-color: coral;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
 }
