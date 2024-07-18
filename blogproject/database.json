@@ -17,6 +17,12 @@
       "username": "thinh",
       "email": "thinh@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "bb7b",
+      "username": "user3",
+      "email": "user3@gmail.com",
+      "password": "123"
     }
   ],
   "blog": [
@@ -74,7 +80,20 @@
           "id": 4,
           "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1520772455248-U1ZUTWP5XF859S2XRRCP/duong+14.jpg?format=1500w"
         }
+      ],
+      "comments": [
+        {
+          "id": "1",
+          "user_id": "1",
+          "content": "Bài viết hay quá, cảm ơn tác giả!"
+        },
+        {
+          "id": "2",
+          "user_id": "2",
+          "content": "Rất thích Sapa vào mùa xuân, cảm ơn vì những gợi ý!"
+        }
       ]
+    
     },
     {
       "id": "2",
@@ -86,7 +105,7 @@
         },
         {
           "id": 2,
-          "name": ""
+          "name": "“Sách Eat clean của chúng mình tái bản chỉ sau 2 ngày lên kệ và xô đổ mọi kỷ lục tái bản nhanh của Ilovecookbook. Tuyệt vời quá các bạn ơi <3”"
         }
       ],
       "content": [
@@ -96,15 +115,15 @@
         },
         {
           "id": 2,
-          "name": ""
+          "name": "Thật tuyệt vời vì mọi người đã đón nhận nó. Hiện tại cuốn sách Eat Clean - 14 ngày thanh lọc cơ thể và giảm cân đã bán hết chỉ sau 2 ngày chính thức lên kệ. Chúng mình đã xô đổ mọi kỷ lục xuất bản sách của Ilovecookbook từ trước tới nay. Và mình muốn dành một triệu cái ôm để cám ơn tất cả mọi người đã ủng hộ cả ba tác giả <3"
         },
         {
           "id": 3,
-          "name": ""
+          "name": "Sách “Eat Clean- Thực đơn 14 ngày thanh lọc cơ thể và giảm cân” hiện đã có link đặt trước tại:"
         },
         {
           "id": 4,
-          "name": ""
+          "name": "Shopee: http://bit.ly/eatclean-shopee"
         }
       ],
       "author": "Tuyết Mai",
@@ -139,7 +158,11 @@
         },
         {
           "id": 2,
-          "name": ""
+          "name": "Cách làm: "
+        },
+        {
+          "id": 2,
+          "name": "Hướng dẫn: "
         }
       ],
       "content": [
@@ -149,18 +172,18 @@
         },
         {
           "id": 2,
-          "name": ""
+          "name": "Sốt teriyaki Sốt teriyaki 25ml (hoặc 3 tbsp) nước tương 2 tbsp đường nâu (hoặc đường vàng) 1/2 tsp bột gừng (hoặc 1 tsp gừng tươi băm nhuyễn) tỏi (hoặc 1 tsp tỏi băm) 1 tsp dầu mè 2 tbsp mirin 3 tbsp nước 1 tsp bột ngô hoặc bột năng."
         },
         {
           "id": 3,
-          "name": ""
+          "name": "Cho tất cả các nguyên liệu vào nồi nhỏ, đun sôi, giảm lửa và đun trong khoảng 3-4 phút. Nước sốt đặc lại thì tắt bếp và đổ vào bát riêng. (Không dùng hết nước sốt có thể bảo quản trong tủ lạnh lên đến một tuần)."
         },
         {
           "id": 4,
-          "name": ""
+          "name": "Làm nóng lò nướng ở 180 ° C và lót khay bằng giấy nướng. Cắt đôi quả cà tím, theo chiều dọc, ngâm cà vào nướng lạnh pha muối trong 15 phút để bỏ hết nhựa đen. Dùng giấy ăn thấm khô au đó khía phần thịt cà hình kim cương (mắt cáo), chú ý không cắt qua vỏ. Tưới 1/2 nước sốt teriyaki vào cà tím để xốt ngấm hết vào các đường đã rạch. Phần nước xốt còn thừa có thể để tưới hoặc chấm ăn kèm sau khi nướng. Bỏ vào lò nướng hoặc nồi chiên không dầu trong 20-25 phút cho đến khi mềm và có màu caramel. Lấy cà tím ra khay, quét thêm nước sốt teriyaki. Dùng đèn khò khò lên mặt cà tím cho có mùi thơm và bề mặt nước sốt se lại. Rắc vừng rang và hành lá cắt khúc lên trên."
         }
       ],
-      "author": "Duy Bảo",
+      "author": "Phương Thúy",
       "createdat": "2024-04-30",
       "category": "Food",
       "image": [
@@ -174,7 +197,7 @@
         },
         {
           "id": 3,
-          "name": ""
+          "name": "https://media.istockphoto.com/id/1469964844/vi/anh/m%C3%B3n-khai-v%E1%BB%8B-tinh-t%E1%BA%BF-b%E1%BA%A1ch-tu%E1%BB%99c-n%C6%B0%E1%BB%9Bng-v%E1%BB%9Bi-c%C3%A0-t%C3%ADm-trong-s%E1%BB%91t-teriyaki-x%C3%BAc-tu-b%E1%BA%A1ch-tu%E1%BB%99c-lu%E1%BB%99c-v%C3%A0-rau.jpg?s=1024x1024&w=is&k=20&c=0b_cXA1OFpQ7heX_guV9Kk86oXGCOfmEXFVtcxzxtQA="
         },
         {
           "id": 4,
@@ -188,25 +211,33 @@
       "bulletpoints": [
         {
           "id": 1,
+          "name": "Bất kì ai tới nhà mình đều có chung một thắc mắc: Sao đi thuê nhà mà đầu tư ác thế?Chủ nhà lấy lại nhà thì bao nhiêu tiền mất hết! Phí thế có phải nhà mình đâu mà bày vẽ?"
+        },
+        {
+          "id": "2",
           "name": ""
         },
         {
-          "id": 2,
+          "id": "3",
           "name": ""
+        },
+        {
+          "id": 4,
+          "name": "“Em cám ơn chị rất nhiều chị Phan Anh Esheep Kitchen <3”"
         }
       ],
       "content": [
         {
           "id": 1,
-          "name": "Bất kì ai tới nhà mình đều có chung một thắc mắc: Sao đi thuê nhà mà đầu tư ác thế? Chủ nhà lấy lại nhà thì bao nhiêu tiền mất hết! Phí thế có phải nhà mình đâu mà bày vẽ? Vậy nếu những ai trót yêu bếp mà chưa có tiền mua nhà thì chẳng nhẽ cứ nấu nướng tạm bợ hoặc chẳng nấu ăn nữa? Nếu đến quá nửa đời người bạn vẫn chưa mua được nhà thì sao?"
+          "name": "Vậy nếu những ai trót yêu bếp mà chưa có tiền mua nhà thì chẳng nhẽ cứ nấu nướng tạm bợ hoặc chẳng nấu ăn nữa? Nếu đến quá nửa đời người bạn vẫn chưa mua được nhà thì sao?"
         },
         {
           "id": 2,
-          "name": ""
+          "name": "Bạn bè đặt cho mình một cái biệt danh là người Phụ nữ đi tới đâu xây nhà cho chủ nhà tới đó. :)) Mình cũng thấy vui vì mình làm đẹp cho đời mà, mình sửa nhà đẹp cho người ta, mình được ở nhà đẹp mình vui, chủ nhà có người thuê có tâm họ cũng vui. Ai nấy đều vui vẻ với nhau có sao đâu? Mà chưa kể công việc của mình gắn liền với bếp núc, đầu tư không gian để nấu cũng vừa để làm việc thì đấy là một khoản đầu tư cho sự nghiệp thôi. Để mình tính bạn nghe: thuê nhà không có nội thất bao giờ cũng rẻ hơn 10-20% nhà có đầy đủ vậy thì cứ lấy chi phí chênh lệch x số tháng bạn ký hợp đồng để có tiền dư cho khấu hao."
         },
         {
           "id": 3,
-          "name": ""
+          "name": "Sau 3 lần mình đi xây bếp cho chủ nhà thì đây là lần mình đầu tư nhiều thời gian, công sức cũng như tiền bạc nhất. Khởi nguồn từ chiếc bếp ga cũ kĩ kêu cành cạch mỗi khi bật lên cho đến chiếc lò nướng để bàn đầu tiên. Còn bây giờ là một chiếc bếp tủ liền lò, cửa kính 3 lớp và luôn sẵn sàng cho ra những chiếc bánh vàng ngon nhất. Chiếc tủ bếp này như một sự đánh dấu của trưởng thành trong sự nghiệp của một food stylist. Mỗi lần nhìn ngắm nó mình lại thêm động lực viết đã bỏ quên bấy lâu nay. Chiếc blog lạnh lẽo nay đã sưởi ấm lại rồi và một phần trong mình cám ơn lắm vì một người chị đã cho mình thêm động lực đặt niềm tin ở bản thân và viết tiếp câu chuyện mình là ai?"
         },
         {
           "id": 4,
@@ -227,7 +258,7 @@
         },
         {
           "id": 3,
-          "name": ""
+          "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/1583477209185-DQ4J1KNILUVJJ52BGTPF/20200207+-+Architecture+-+Meothuyduong%27s+house+-+00106.jpg?format=750w"
         },
         {
           "id": 4,
@@ -236,39 +267,35 @@
       ]
     },
     {
-      "id": 1721201216985,
-      "title": "Demo 1",
+      "id": "1721291551314",
+      "title": "TRẦM CẢM THEO MÙA (SAD) LÀ GÌ?",
       "bulletpoints": [
         {
-          "id": 1,
-          "name": "Tieu de 1"
-        },
-        {
-          "id": 2,
-          "name": "Tieu de 2"
+          "id": "1",
+          "name": "1. Trầm cảm theo mùa, rối loạn cảm xúc theo mùa - Seasonal affective disorder (SAD)*"
         }
       ],
       "content": [
         {
-          "id": 1,
-          "name": "content 1"
-        },
-        {
-          "id": 2,
-          "name": "content 2"
+          "id": "1",
+          "name": "Là một chứng trầm cảm liên quan đến sự chuyển đổi mùa, hoặc sự thay đổi về lượng ánh sáng giữa các mùa.\n\nMiền Bắc thường là cuối thu sang đông, lượng ánh sáng mặt trời giảm hẳn so với mùa hè nắng gắt trước đó. Không chỉ lạnh, mùa đông miền Bắc còn nồm, ẩm gây bất tiện cho cả sinh hoạt thể chất lẫn tinh thần.\n\nMiền Nam thường là vào mùa mưa, mây và mưa rất nhiều làm che đi ánh sáng mặt trời khiến cơ thể con người mất đi phần lớn ánh sáng tự nhiên mà lẽ ra chúng ta nên hấp thụ.\n\nCác hiện tượng thời tiết như: mưa nhiều, không khí lạnh, độ ẩm cao, thiếu nắng... làm giao thông ảnh hưởng và làm hạn chế tương tác xã hội. Do đó một số người có vấn đề nhạy cảm với thời tiết sẽ bị kích hoạt các triệu chứng trầm cảm theo mùa."
         }
       ],
-      "author": "Thinh",
-      "createdat": "2024-07-17",
-      "category": "Styling",
+      "author": "thinh",
+      "createdat": "2024-07-18",
+      "category": "Life Style",
       "image": [
         {
-          "id": 1,
-          "name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s"
+          "id": "1",
+          "name": "https://images.squarespace-cdn.com/content/v1/58934eea4402434d7206ba8f/d53b3830-0a81-47f9-aba1-35aba710789b/Screen+Shot+2022-05-06+at+1.56.18+PM.png?format=750w"
         },
         {
-          "id": 2,
-          "name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2dVbLMzlaeJnL5C6RpZ8HLRECJhH6ILEGKg&s"
+          "id": "2",
+          "name": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRmr0h3VOGTq7WSIthMDBTLPZmRpOgT536-A&s"
+        },
+        {
+          "id": "3",
+          "name": " "
         }
       ]
     }

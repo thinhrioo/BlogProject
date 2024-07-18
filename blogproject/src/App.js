@@ -8,6 +8,8 @@ import Settings from "./pages/settings/Settings";
 import Single from "./pages/single/Single";
 import Write from "./pages/write/Write";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MyBlog from "./pages/MyBlog";
+import EditBlog from "./pages/editBlog/EditBlog";
 
 function App() {
   const [currentUser, setCurrentUser] = useState(false);
@@ -38,6 +40,8 @@ function App() {
         <Route path="/write" element={currentUser ? <Write /> : <Login setCurrentUser={setCurrentUser} />} />
         <Route path="/settings" element={currentUser ? <Settings /> : <Login setCurrentUser={setCurrentUser} />} />
         <Route path="/register" element={currentUser ? <Homepage /> : <Register />} />
+        <Route path="/myblog" element={<MyBlog />} />
+        <Route path="/edit/:id" element={<EditBlog />} />
       </Routes>
     </BrowserRouter>
   );

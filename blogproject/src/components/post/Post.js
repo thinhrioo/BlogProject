@@ -66,8 +66,9 @@ export default function Post({ search , selectedCategories}) {
               <hr />
               <div style={{ display: "flex", justifyContent: "space-between" }}>
                 <span className="postDate">{new Date(b.createdat).toLocaleDateString()}</span>
-                <span className="postAuthor">{b.author}</span>
+                
               </div>
+              <div><span className="postAuthor">Author: {b.author}</span></div>
             </div>
             <div className="postDesc">
               {b.content?.map((content) => (

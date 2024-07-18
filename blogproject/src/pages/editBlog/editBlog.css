@@ -1,0 +1,47 @@
+.edit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .editForm {
+    width: 70%;
+    margin-top: 20px;
+  }
+  
+  .editFormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .editInput {
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  .editText {
+    height: 200px;
+    resize: none;
+  }
+  
+  .editButton {
+    background-color: lightcoral;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+  }
+  
+  .editButton:hover {
+    background-color: coral;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 10px;
+  }
+  

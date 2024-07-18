@@ -1,32 +1,43 @@
-// src/pages/write/Write.js
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-import "./write.css";
+import "./editBlog.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-export default function Write() {
+export default function EditBlog() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState([{ id: "1", name: "" }]);
   const [imageLinks, setImageLinks] = useState([{ id: "1", name: "" }]);
   const [bulletpoints, setBulletpoints] = useState([{ id: "1", name: "" }]);
   const [category, setCategory] = useState("");
   const [categories, setCategories] = useState([]);
-  const [createdat, setCreatedAt] = useState(new Date().toISOString().substring(0, 10)); // Get current date in YYYY-MM-DD format
+  const [createdat, setCreatedAt] = useState(new Date().toISOString().substring(0, 10));
   const [error, setError] = useState("");
   const navigate = useNavigate();
+  const { id } = useParams();
 
-  // Get username from localStorage
   const username = localStorage.getItem('username');
 
   useEffect(() => {
+    axios.get(`http://localhost:9999/blog/${id}`)
+      .then(res => {
+        const blog = res.data;
+        setTitle(blog.title);
+        setCategory(blog.category);
+        setContent(blog.content);
+        setImageLinks(blog.image);
+        setBulletpoints(blog.bulletpoints);
+        setCreatedAt(blog.createdat);
+      })
+      .catch(err => console.log(err));
+
     axios.get("http://localhost:9999/blog")
       .then(res => {
         const uniqueCategories = [...new Set(res.data.map(b => b.category))];
         setCategories(uniqueCategories);
       })
       .catch(err => console.log(err));
-  }, []);
+  }, [id]);
 
   const handleInputChange = (setter) => (id, name) => {
     setter(prevState => prevState.map(item => item.id === id ? { ...item, name } : item));
@@ -42,22 +53,22 @@ export default function Write() {
     setError('');
 
     try {
-      const newBlog = {
-        id: Date.now().toString(), // Sử dụng timestamp để tạo ID duy nhất dạng chuỗi
+      const updatedBlog = {
+        id, // Use the existing id
         title,
         bulletpoints,
         content,
-        author: username, // Set author to username from localStorage
+        author: username,
         createdat,
         category,
         image: imageLinks,
       };
 
-      const response = await axios.post("http://localhost:9999/blog", newBlog);
-      if (response.status === 201) {
-        navigate('/');
+      const response = await axios.put(`http://localhost:9999/blog/${id}`, updatedBlog);
+      if (response.status === 200) {
+        navigate(`/post/${id}`);
       } else {
-        setError('Failed to create the blog post');
+        setError('Failed to update the blog post');
       }
     } catch (err) {
       setError('An error occurred. Please try again later.');
@@ -65,9 +76,9 @@ export default function Write() {
   };
 
   return (
-    <div className="write container mt-4">
-      <h2 className="writeTitle">Create a New Blog Post</h2>
-      <form className="writeForm" onSubmit={handleSubmit}>
+    <div className="edit container mt-4">
+      <h2 className="editTitle">Edit Blog Post</h2>
+      <form className="editForm" onSubmit={handleSubmit}>
         <div className="mb-3">
           <label className="form-label">Title</label>
           <input
@@ -84,8 +95,8 @@ export default function Write() {
           <label className="form-label">Author</label>
           <input
             type="text"
-            value={username} // Set value to username from localStorage
-            readOnly // Make it read-only
+            value={username}
+            readOnly
             className="form-control"
           />
         </div>
@@ -116,8 +127,6 @@ export default function Write() {
             ))}
           </select>
         </div>
-
-        
 
         <div className="mb-3">
           <label className="form-label">Bullet Points</label>
@@ -151,6 +160,7 @@ export default function Write() {
           ))}
           <button type="button" onClick={() => addField(setContent, content)} className="btn btn-secondary">Add Content</button>
         </div>
+
         <div className="mb-3">
           <label className="form-label">Image Links</label>
           {imageLinks.map(link => (
@@ -167,8 +177,9 @@ export default function Write() {
           ))}
           <button type="button" onClick={() => addField(setImageLinks, imageLinks)} className="btn btn-secondary">Add Image Link</button>
         </div>
+
         {error && <div className="alert alert-danger">{error}</div>}
-        <button type="submit" className="btn btn-primary">Publish</button>
+        <button type="submit" className="btn btn-primary">Update</button>
       </form>
     </div>
   );
