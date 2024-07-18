@@ -11,7 +11,7 @@ export default function SinglePost() {
   const [comment, setComment] = useState("");
   const { id } = useParams();
   const user_id = 1; // Assuming user_id is 1 for now, you might want to fetch it dynamically
-
+  
   useEffect(() => {
     axios.get(`http://localhost:9999/blog/${id}`)
       .then(res => {
@@ -28,7 +28,7 @@ export default function SinglePost() {
       content: comment
     };
 
-    axios.post(`http://localhost:9999/blog/${id}/comments`, newComment)
+    axios.post(`http://localhost:9999/blog/${id}`, newComment)
       .then(res => {
         setComments([...comments, res.data]);
         setComment("");
@@ -82,7 +82,8 @@ export default function SinglePost() {
         )}
 
         {/* Comment Form */}
-        <div  className="commentSection">
+        <div  style={{borderTop:"1px solid black", borderBottom:"1px solid black", padding:"3%"}}>
+        <div className="commentSection">
           <h3>Comments</h3>
           {comments.map((comment, index) => (
             <div key={index} className="comment">
@@ -90,6 +91,7 @@ export default function SinglePost() {
             </div>
           ))}
           <Form onSubmit={handleCommentSubmit}>
+            <h3>User: </h3>
             <textarea
             style={{width:"100%", borderRadius:"10px"}}
               value={comment}
@@ -102,6 +104,7 @@ export default function SinglePost() {
             <Button className="btn btn-success" type="submit">Submit</Button>
           </Form>
         </div>
+      </div>
       </div>
     </div>
   );
